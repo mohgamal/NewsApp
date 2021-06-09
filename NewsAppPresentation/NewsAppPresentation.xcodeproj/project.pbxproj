@@ -21,6 +21,7 @@
 		9CCEB9A92670B5D900B5B3C3 /* NewsSearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CCEB9A72670B5D900B5B3C3 /* NewsSearchVC.xib */; };
 		9CCEB9AB2670B89500B5B3C3 /* AppDIInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEB9AA2670B89500B5B3C3 /* AppDIInterface.swift */; };
 		9CCEB9B62670BC6A00B5B3C3 /* CoordinatorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEB9B52670BC6A00B5B3C3 /* CoordinatorInterface.swift */; };
+		9CCEB9C22670C4E500B5B3C3 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEB9C12670C4E500B5B3C3 /* ImageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		9CCEB9A72670B5D900B5B3C3 /* NewsSearchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsSearchVC.xib; sourceTree = "<group>"; };
 		9CCEB9AA2670B89500B5B3C3 /* AppDIInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIInterface.swift; sourceTree = "<group>"; };
 		9CCEB9B52670BC6A00B5B3C3 /* CoordinatorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorInterface.swift; sourceTree = "<group>"; };
+		9CCEB9C12670C4E500B5B3C3 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		9CCEB9552670965600B5B3C3 /* NewsAppPresentation */ = {
 			isa = PBXGroup;
 			children = (
+				9CCEB9C02670C4DB00B5B3C3 /* Helpers */,
 				9CCEB9932670A26B00B5B3C3 /* Scenes */,
 				9CCEB9562670965600B5B3C3 /* NewsAppPresentation.h */,
 				9CCEB9572670965600B5B3C3 /* Info.plist */,
@@ -162,6 +165,14 @@
 				9CCEB99B2670B2EA00B5B3C3 /* ArticleCell.xib */,
 			);
 			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		9CCEB9C02670C4DB00B5B3C3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9CCEB9C12670C4E500B5B3C3 /* ImageDownloader.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +293,7 @@
 				9CCEB9A82670B5D900B5B3C3 /* NewsSearchVC.swift in Sources */,
 				9CCEB9A32670B54400B5B3C3 /* NewsSearchVC+TableView.swift in Sources */,
 				9CCEB9A52670B55200B5B3C3 /* NewsSearchVC+SearchBar.swift in Sources */,
+				9CCEB9C22670C4E500B5B3C3 /* ImageDownloader.swift in Sources */,
 				9CCEB9A12670B4CE00B5B3C3 /* NewsSearchVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
