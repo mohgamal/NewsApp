@@ -8,5 +8,5 @@
 import Foundation
 
 public protocol NewsDomainRepoInterface {
-    func searchForNews(by filter: String?, and page: Int?, handler: @escaping (Result<NewsEntity, NewsAppError>) -> Void)
+    func searchForNews(by filter: String?, page: Int?, handler: @escaping (Result<NewsEntity, NewsAppError>) -> Void)
 }

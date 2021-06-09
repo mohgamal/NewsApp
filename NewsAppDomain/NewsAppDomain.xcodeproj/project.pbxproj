@@ -13,6 +13,7 @@
 		9CCEB98426709B6600B5B3C3 /* NewsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEB98326709B6600B5B3C3 /* NewsEntity.swift */; };
 		9CCEB98626709CEE00B5B3C3 /* NewsDomainRepoInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEB98526709CEE00B5B3C3 /* NewsDomainRepoInterface.swift */; };
 		9CCEB98926709D1A00B5B3C3 /* NewsAppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEB98826709D1A00B5B3C3 /* NewsAppError.swift */; };
+		9CCEB98B26709E0400B5B3C3 /* NewsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEB98A26709E0400B5B3C3 /* NewsInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		9CCEB98326709B6600B5B3C3 /* NewsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsEntity.swift; sourceTree = "<group>"; };
 		9CCEB98526709CEE00B5B3C3 /* NewsDomainRepoInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDomainRepoInterface.swift; sourceTree = "<group>"; };
 		9CCEB98826709D1A00B5B3C3 /* NewsAppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAppError.swift; sourceTree = "<group>"; };
+		9CCEB98A26709E0400B5B3C3 /* NewsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				9CCEB98326709B6600B5B3C3 /* NewsEntity.swift */,
 				9CCEB98526709CEE00B5B3C3 /* NewsDomainRepoInterface.swift */,
+				9CCEB98A26709E0400B5B3C3 /* NewsInteractor.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				9CCEB98626709CEE00B5B3C3 /* NewsDomainRepoInterface.swift in Sources */,
 				9CCEB98426709B6600B5B3C3 /* NewsEntity.swift in Sources */,
 				9CCEB98926709D1A00B5B3C3 /* NewsAppError.swift in Sources */,
+				9CCEB98B26709E0400B5B3C3 /* NewsInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
