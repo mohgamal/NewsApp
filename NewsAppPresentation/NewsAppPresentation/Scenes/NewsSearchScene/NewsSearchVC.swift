@@ -35,7 +35,7 @@ public class NewsSearchVC: UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "Search for the News ..."
         configViewSources()
         bindViewModel()
     }

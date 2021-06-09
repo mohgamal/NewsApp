@@ -21,12 +21,12 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Scv-uu-iWY">
+                <searchBar contentMode="redraw" placeholder="Search for the news ..." translatesAutoresizingMaskIntoConstraints="NO" id="Scv-uu-iWY">
                     <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="wL8-Ye-cKw"/>
                     </constraints>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                 </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2dP-g0-TNq">
                     <rect key="frame" x="0.0" y="88" width="414" height="774"/>
