@@ -27,4 +27,13 @@ extension NewsSearchVC: UITableViewDelegate, UITableViewDataSource {
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 350
     }
+    
+    public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == (self.newsSearchVM.newsResultEntity.articles?.count ?? 0) - 4 && !self.newsSearchVM.isLoading &&
+            self.newsSearchVM.page < 5 {
+            self.newsSearchVM.isLoading = true
+            self.newsSearchVM.page += 1
+            self.newsSearchVM.getNewsSearchResult(with: searchBar.text ?? "", page: self.newsSearchVM.page)
+        }
+    }
 }

@@ -31,8 +31,7 @@ public class NewsSearchVM: ObservableObject {
                     if page == 1 {
                         self?.newsResultEntity = newsEntity
                     } else {
-                        
-                        for item in self?.newsResultEntity.articles ?? [] {
+                        for item in newsEntity.articles ?? [] {
                             self?.newsResultEntity.articles?.append(item)
                         }
                     }
