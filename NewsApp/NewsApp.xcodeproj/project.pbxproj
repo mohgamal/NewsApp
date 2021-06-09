@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		9CCEB8D2267095E400B5B3C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEB8D1267095E400B5B3C3 /* AppDelegate.swift */; };
 		9CCEB8D4267095E400B5B3C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEB8D3267095E400B5B3C3 /* SceneDelegate.swift */; };
-		9CCEB8D6267095E400B5B3C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEB8D5267095E400B5B3C3 /* ViewController.swift */; };
-		9CCEB8D9267095E400B5B3C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CCEB8D7267095E400B5B3C3 /* Main.storyboard */; };
-		9CCEB8DB267095E500B5B3C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CCEB8DA267095E500B5B3C3 /* Assets.xcassets */; };
 		9CCEB8DE267095E500B5B3C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CCEB8DC267095E500B5B3C3 /* LaunchScreen.storyboard */; };
 		9CCEB8E9267095E500B5B3C3 /* NewsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEB8E8267095E500B5B3C3 /* NewsAppTests.swift */; };
 		9CCEB8F4267095E500B5B3C3 /* NewsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEB8F3267095E500B5B3C3 /* NewsAppUITests.swift */; };
@@ -21,6 +18,7 @@
 		9CCEB97E267096A600B5B3C3 /* NewsAppDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCEB979267096A500B5B3C3 /* NewsAppDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9CCEB97F267096A600B5B3C3 /* NewsAppPresentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCEB97A267096A500B5B3C3 /* NewsAppPresentation.framework */; };
 		9CCEB980267096A600B5B3C3 /* NewsAppPresentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCEB97A267096A500B5B3C3 /* NewsAppPresentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CCEB9AF2670BB8B00B5B3C3 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEB9AE2670BB8B00B5B3C3 /* AppEnvironment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +58,6 @@
 		9CCEB8CE267095E400B5B3C3 /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CCEB8D1267095E400B5B3C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CCEB8D3267095E400B5B3C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9CCEB8D5267095E400B5B3C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9CCEB8D8267095E400B5B3C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9CCEB8DA267095E500B5B3C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CCEB8DD267095E500B5B3C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CCEB8DF267095E500B5B3C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CCEB8E4267095E500B5B3C3 /* NewsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +69,7 @@
 		9CCEB978267096A500B5B3C3 /* NewsAppData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NewsAppData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CCEB979267096A500B5B3C3 /* NewsAppDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NewsAppDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CCEB97A267096A500B5B3C3 /* NewsAppPresentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NewsAppPresentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CCEB9AE2670BB8B00B5B3C3 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,13 +124,10 @@
 		9CCEB8D0267095E400B5B3C3 /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
-				9CCEB8D1267095E400B5B3C3 /* AppDelegate.swift */,
-				9CCEB8D3267095E400B5B3C3 /* SceneDelegate.swift */,
-				9CCEB8D5267095E400B5B3C3 /* ViewController.swift */,
-				9CCEB8D7267095E400B5B3C3 /* Main.storyboard */,
-				9CCEB8DA267095E500B5B3C3 /* Assets.xcassets */,
-				9CCEB8DC267095E500B5B3C3 /* LaunchScreen.storyboard */,
-				9CCEB8DF267095E500B5B3C3 /* Info.plist */,
+				9CCEB9AC2670BB5800B5B3C3 /* AppFiles */,
+				9CCEB9B02670BB8E00B5B3C3 /* AppDI */,
+				9CCEB9AD2670BB5C00B5B3C3 /* AppEnvironment */,
+				9CCEB9B12670BBA100B5B3C3 /* Resources */,
 			);
 			path = NewsApp;
 			sourceTree = "<group>";
@@ -165,6 +158,39 @@
 				9CCEB97A267096A500B5B3C3 /* NewsAppPresentation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CCEB9AC2670BB5800B5B3C3 /* AppFiles */ = {
+			isa = PBXGroup;
+			children = (
+				9CCEB8DF267095E500B5B3C3 /* Info.plist */,
+				9CCEB8D1267095E400B5B3C3 /* AppDelegate.swift */,
+				9CCEB8D3267095E400B5B3C3 /* SceneDelegate.swift */,
+			);
+			path = AppFiles;
+			sourceTree = "<group>";
+		};
+		9CCEB9AD2670BB5C00B5B3C3 /* AppEnvironment */ = {
+			isa = PBXGroup;
+			children = (
+				9CCEB9AE2670BB8B00B5B3C3 /* AppEnvironment.swift */,
+			);
+			path = AppEnvironment;
+			sourceTree = "<group>";
+		};
+		9CCEB9B02670BB8E00B5B3C3 /* AppDI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppDI;
+			sourceTree = "<group>";
+		};
+		9CCEB9B12670BBA100B5B3C3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9CCEB8DC267095E500B5B3C3 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,8 +298,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CCEB8DE267095E500B5B3C3 /* LaunchScreen.storyboard in Resources */,
-				9CCEB8DB267095E500B5B3C3 /* Assets.xcassets in Resources */,
-				9CCEB8D9267095E400B5B3C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,9 +322,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CCEB8D6267095E400B5B3C3 /* ViewController.swift in Sources */,
 				9CCEB8D2267095E400B5B3C3 /* AppDelegate.swift in Sources */,
 				9CCEB8D4267095E400B5B3C3 /* SceneDelegate.swift in Sources */,
+				9CCEB9AF2670BB8B00B5B3C3 /* AppEnvironment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,14 +360,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9CCEB8D7267095E400B5B3C3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9CCEB8D8267095E400B5B3C3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9CCEB8DC267095E500B5B3C3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -478,7 +494,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C6VRVQTQZ4;
-				INFOPLIST_FILE = NewsApp/Info.plist;
+				INFOPLIST_FILE = NewsApp/AppFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,7 +513,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C6VRVQTQZ4;
-				INFOPLIST_FILE = NewsApp/Info.plist;
+				INFOPLIST_FILE = NewsApp/AppFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
