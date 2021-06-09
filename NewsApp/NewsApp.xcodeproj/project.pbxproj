@@ -19,6 +19,9 @@
 		9CCEB97F267096A600B5B3C3 /* NewsAppPresentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCEB97A267096A500B5B3C3 /* NewsAppPresentation.framework */; };
 		9CCEB980267096A600B5B3C3 /* NewsAppPresentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCEB97A267096A500B5B3C3 /* NewsAppPresentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9CCEB9AF2670BB8B00B5B3C3 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEB9AE2670BB8B00B5B3C3 /* AppEnvironment.swift */; };
+		9CCEB9B42670BC3600B5B3C3 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEB9B32670BC3600B5B3C3 /* MainCoordinator.swift */; };
+		9CCEB9B82670BD9900B5B3C3 /* AppDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEB9B72670BD9900B5B3C3 /* AppDI.swift */; };
+		9CCEB9BA2670BDB700B5B3C3 /* NewsSearchDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEB9B92670BDB700B5B3C3 /* NewsSearchDI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 		9CCEB979267096A500B5B3C3 /* NewsAppDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NewsAppDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CCEB97A267096A500B5B3C3 /* NewsAppPresentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NewsAppPresentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CCEB9AE2670BB8B00B5B3C3 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		9CCEB9B32670BC3600B5B3C3 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		9CCEB9B72670BD9900B5B3C3 /* AppDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDI.swift; sourceTree = "<group>"; };
+		9CCEB9B92670BDB700B5B3C3 /* NewsSearchDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSearchDI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,7 @@
 		9CCEB8D0267095E400B5B3C3 /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				9CCEB9B22670BC2900B5B3C3 /* Coordinator */,
 				9CCEB9AC2670BB5800B5B3C3 /* AppFiles */,
 				9CCEB9B02670BB8E00B5B3C3 /* AppDI */,
 				9CCEB9AD2670BB5C00B5B3C3 /* AppEnvironment */,
@@ -181,6 +188,8 @@
 		9CCEB9B02670BB8E00B5B3C3 /* AppDI */ = {
 			isa = PBXGroup;
 			children = (
+				9CCEB9B72670BD9900B5B3C3 /* AppDI.swift */,
+				9CCEB9B92670BDB700B5B3C3 /* NewsSearchDI.swift */,
 			);
 			path = AppDI;
 			sourceTree = "<group>";
@@ -191,6 +200,14 @@
 				9CCEB8DC267095E500B5B3C3 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		9CCEB9B22670BC2900B5B3C3 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9CCEB9B32670BC3600B5B3C3 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +340,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CCEB8D2267095E400B5B3C3 /* AppDelegate.swift in Sources */,
+				9CCEB9BA2670BDB700B5B3C3 /* NewsSearchDI.swift in Sources */,
+				9CCEB9B42670BC3600B5B3C3 /* MainCoordinator.swift in Sources */,
+				9CCEB9B82670BD9900B5B3C3 /* AppDI.swift in Sources */,
 				9CCEB8D4267095E400B5B3C3 /* SceneDelegate.swift in Sources */,
 				9CCEB9AF2670BB8B00B5B3C3 /* AppEnvironment.swift in Sources */,
 			);
