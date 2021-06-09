@@ -25,7 +25,7 @@ public class ArticleVC: UIViewController {
         super.viewDidLoad()
 
         if let article = article {
-            self.title = article.author
+            self.title = article.title
         }
         
     }

@@ -22,7 +22,7 @@ class ArticleCell: UITableViewCell {
     }
     
     func configureCell(with article: NewsEntity.Articles?) {
-        articleContentLabel.text = article?.content
+        articleContentLabel.text = article?.description
         articleImage.layer.cornerRadius = 5
         
         ImageDownloader.shared.downloadImage(with: article?.urlToImage, completionHandler: { (image, result) in
