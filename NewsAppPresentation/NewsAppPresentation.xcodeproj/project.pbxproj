@@ -20,6 +20,7 @@
 		9CCEB9A82670B5D900B5B3C3 /* NewsSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEB9A62670B5D900B5B3C3 /* NewsSearchVC.swift */; };
 		9CCEB9A92670B5D900B5B3C3 /* NewsSearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CCEB9A72670B5D900B5B3C3 /* NewsSearchVC.xib */; };
 		9CCEB9AB2670B89500B5B3C3 /* AppDIInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEB9AA2670B89500B5B3C3 /* AppDIInterface.swift */; };
+		9CCEB9B62670BC6A00B5B3C3 /* CoordinatorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEB9B52670BC6A00B5B3C3 /* CoordinatorInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		9CCEB9A62670B5D900B5B3C3 /* NewsSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSearchVC.swift; sourceTree = "<group>"; };
 		9CCEB9A72670B5D900B5B3C3 /* NewsSearchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsSearchVC.xib; sourceTree = "<group>"; };
 		9CCEB9AA2670B89500B5B3C3 /* AppDIInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIInterface.swift; sourceTree = "<group>"; };
+		9CCEB9B52670BC6A00B5B3C3 /* CoordinatorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				9CCEB9562670965600B5B3C3 /* NewsAppPresentation.h */,
 				9CCEB9572670965600B5B3C3 /* Info.plist */,
 				9CCEB9AA2670B89500B5B3C3 /* AppDIInterface.swift */,
+				9CCEB9B52670BC6A00B5B3C3 /* CoordinatorInterface.swift */,
 			);
 			path = NewsAppPresentation;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CCEB9AB2670B89500B5B3C3 /* AppDIInterface.swift in Sources */,
+				9CCEB9B62670BC6A00B5B3C3 /* CoordinatorInterface.swift in Sources */,
 				9CCEB99C2670B2EA00B5B3C3 /* ArticleCell.swift in Sources */,
 				9CCEB9A82670B5D900B5B3C3 /* NewsSearchVC.swift in Sources */,
 				9CCEB9A32670B54400B5B3C3 /* NewsSearchVC+TableView.swift in Sources */,

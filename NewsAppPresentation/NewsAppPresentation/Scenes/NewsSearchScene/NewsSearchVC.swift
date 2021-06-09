@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 
-class NewsSearchVC: UIViewController {
+public class NewsSearchVC: UIViewController {
     
     public let newsSearchVM: NewsSearchVM
     private var cancellable: AnyCancellable?
@@ -33,7 +33,7 @@ class NewsSearchVC: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         configViewSources()
