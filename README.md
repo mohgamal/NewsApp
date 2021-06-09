@@ -13,3 +13,10 @@
 - Presentation Layer: which everything the application looks like it used MVVM and combine for inteeractivity betwwen view and view model and it depends on Domain layer interactor to get translated data from remote apis or local data.
   - Presnetation layer holds the dependncy injection interfaces and coordinator interfaces as we don't need the main app to depened on low level presentation layer.
 
+
+Here is view recording from the final app:
+
+
+
+Uploading Video.mov…
+
