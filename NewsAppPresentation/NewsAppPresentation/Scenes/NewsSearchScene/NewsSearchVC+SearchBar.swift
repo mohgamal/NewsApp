@@ -13,6 +13,7 @@ extension NewsSearchVC: UISearchBarDelegate {
         guard let searchtext = searchBar.text else { return }
         
         if searchtext != "" {
+            self.tableView.setContentOffset(.zero, animated:true)
             self.addSpinner()
         }
         
