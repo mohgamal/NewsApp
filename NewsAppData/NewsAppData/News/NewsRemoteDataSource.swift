@@ -21,7 +21,7 @@ public class NewsRemoteDataSource: NewsRemoteDataSourceInterface {
     }
     
     public func searchForNews(by filter: String?, page: Int?, handler: @escaping (Result<NewsModel, NewsAppError>) -> Void) {
-        guard let url = URL(string: "\(urlString)&q=\(filter ?? "")&page=\(page ?? 1)") else {
+        guard let url = URL(string: "\(urlString)q=\(filter ?? "")&page=\(page ?? 1)") else {
             handler(.failure(NewsAppError.NotFound))
             return
         }
