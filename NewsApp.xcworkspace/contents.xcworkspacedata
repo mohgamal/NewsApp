@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:NewsApp/NewsApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NewsAppPresentation/NewsAppPresentation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NewsAppData/NewsAppData.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NewsAppDomain/NewsAppDomain.xcodeproj">
+   </FileRef>
+</Workspace>
