@@ -17,6 +17,6 @@
 Here is view recording from the final app:
 
 
+https://user-images.githubusercontent.com/6039137/121356536-3aae1600-c931-11eb-8c1c-f6c7475a1aa4.mov
 
-Uploading Video.mov…
 
