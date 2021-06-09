@@ -23,10 +23,10 @@ public class NewsSearchVC: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
-    public init(coder: NSCoder,appDI: AppDIInterface, newsSearchVM: NewsSearchVM) {
+    public init(appDI: AppDIInterface, newsSearchVM: NewsSearchVM) {
         self.appDI = appDI
         self.newsSearchVM = newsSearchVM
-        super.init(coder: coder)!
+        super.init(nibName: "NewsSearchVC", bundle: Bundle(for: NewsSearchVC.self))
     }
     
     required init?(coder: NSCoder) {

@@ -13,7 +13,7 @@ public protocol NewsRemoteDataSourceInterface {
     func searchForNews(by filter: String?, page: Int?, handler: @escaping (Result<NewsModel, NewsAppError>) -> Void)
 }
 
-public class NewRemoteDataSource: NewsRemoteDataSourceInterface {
+public class NewsRemoteDataSource: NewsRemoteDataSourceInterface {
     let urlString: String
     
     required public init(urlString: String ) {
