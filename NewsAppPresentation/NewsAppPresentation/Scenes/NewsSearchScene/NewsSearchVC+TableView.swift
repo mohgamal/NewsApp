@@ -43,8 +43,12 @@ extension NewsSearchVC: UITableViewDelegate, UITableViewDataSource {
     public func didTapSourceButton(_ sender: UIButton) {
         let source = self.newsSearchVM.newsResultEntity.articles?[sender.tag]
         guard let url = URL(string: source?.url ?? "") else {
-          return
+            return
         }
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.coordinator.goToArticleScreen(article: self.newsSearchVM.newsResultEntity.articles?[indexPath.row])
     }
 }

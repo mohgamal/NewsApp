@@ -16,16 +16,17 @@ public class NewsSearchVC: UIViewController {
     private var cancellables: Set<AnyCancellable> = []
     
     var appDI: AppDIInterface
-    
+    var coordinator: Coordinator
     public var spinner = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
     
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
-    public init(appDI: AppDIInterface, newsSearchVM: NewsSearchVM) {
+    public init(appDI: AppDIInterface, newsSearchVM: NewsSearchVM, coordinator: Coordinator) {
         self.appDI = appDI
         self.newsSearchVM = newsSearchVM
+        self.coordinator = coordinator
         super.init(nibName: "NewsSearchVC", bundle: Bundle(for: NewsSearchVC.self))
     }
     
