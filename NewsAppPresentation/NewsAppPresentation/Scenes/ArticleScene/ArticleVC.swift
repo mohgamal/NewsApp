@@ -40,9 +40,9 @@ public class ArticleVC: UIViewController {
             self.titleLabel.text = article.title
             self.dateLabel.text = article.publishedAt
             self.authorLabel.text = article.author
-            self.descriptionLabel.text = article.description
-            self.contentLabel.text = article.content
-            self.sourceLabel.text = article.source?.name ?? ""
+            self.descriptionLabel.text =  "Description: \(article.description ?? "")"
+            self.contentLabel.text = "Content: \(article.content ?? "")"
+            self.sourceLabel.text = "Source: \(article.source?.name ?? "")"
             
             ImageDownloader.shared.downloadImage(with: article.urlToImage, completionHandler: { (image, result) in
                 self.articleImage.image = image
