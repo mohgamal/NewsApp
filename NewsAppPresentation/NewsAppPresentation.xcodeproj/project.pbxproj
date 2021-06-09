@@ -90,6 +90,7 @@
 		9CCEB9552670965600B5B3C3 /* NewsAppPresentation */ = {
 			isa = PBXGroup;
 			children = (
+				9CCEB9932670A26B00B5B3C3 /* Scenes */,
 				9CCEB9562670965600B5B3C3 /* NewsAppPresentation.h */,
 				9CCEB9572670965600B5B3C3 /* Info.plist */,
 			);
@@ -111,6 +112,21 @@
 				9CCEB9732670969B00B5B3C3 /* NewsAppDomain.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CCEB9932670A26B00B5B3C3 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9CCEB9942670A28E00B5B3C3 /* NewsSearchScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9CCEB9942670A28E00B5B3C3 /* NewsSearchScene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NewsSearchScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,8 +401,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mohabdelaty.NewsAppPresentation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -409,8 +426,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mohabdelaty.NewsAppPresentation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
