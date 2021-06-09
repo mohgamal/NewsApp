@@ -41,8 +41,8 @@ public struct NewsEntity: Codable {
     }
     
     public struct Source: Codable {
-        let id : String?
-        let name : String?
+        public let id : String?
+        public let name : String?
         
         public init (id: String?, name: String?) {
             self.id = id
