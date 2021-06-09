@@ -17,4 +17,8 @@ extension NewsSearchVC: UITableViewDelegate, UITableViewDataSource {
         cell.configureCell(with: self.newsSearchVM.newsResultEntity.articles?[indexPath.row])
         return cell
     }
+    
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 350
+    }
 }

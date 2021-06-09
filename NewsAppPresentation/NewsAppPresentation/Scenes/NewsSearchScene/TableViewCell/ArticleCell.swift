@@ -22,13 +22,18 @@ class ArticleCell: UITableViewCell {
     }
     
     func configureCell(with article: NewsEntity.Articles?) {
-        self.articleContentLabel.text = article?.content
+        articleContentLabel.text = article?.content
+        articleImage.layer.cornerRadius = 5
+        
+        ImageDownloader.shared.downloadImage(with: article?.urlToImage, completionHandler: { (image, result) in
+            self.articleImage.image = image
+        }, placeholderImage: UIImage(named: "default-image"))
+        
+        self.articleImage.contentMode = .scaleToFill
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    override func prepareForReuse() {
+        articleImage.image = UIImage(named: "default-image")
     }
     
 }
