@@ -9,6 +9,12 @@ import UIKit
 
 extension NewsSearchVC: UITableViewDelegate, UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if self.newsSearchVM.newsResultEntity.articles?.count ?? 0 == 0 {
+            self.tableView.setEmptyMessage("Search for the news")
+        } else {
+            self.tableView.restore()
+        }
+        
         return self.newsSearchVM.newsResultEntity.articles?.count ?? 0
     }
     
