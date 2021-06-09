@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C50C9A12670E7A300F5B581 /* news-list-test.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C50C9A02670E7A300F5B581 /* news-list-test.json */; };
+		9C50C9A32670E81F00F5B581 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C50C9A22670E81F00F5B581 /* Utils.swift */; };
+		9C50C9A52670E86200F5B581 /* NewsSearchRemoteDataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C50C9A42670E86200F5B581 /* NewsSearchRemoteDataSourceMock.swift */; };
+		9C50C9A72670E8DA00F5B581 /* NewsSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C50C9A62670E8DA00F5B581 /* NewsSearchTests.swift */; };
 		9CCEB9392670964100B5B3C3 /* NewsAppData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCEB92F2670964100B5B3C3 /* NewsAppData.framework */; };
 		9CCEB93E2670964100B5B3C3 /* NewsAppDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEB93D2670964100B5B3C3 /* NewsAppDataTests.swift */; };
 		9CCEB9402670964100B5B3C3 /* NewsAppData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CCEB9322670964100B5B3C3 /* NewsAppData.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,6 +46,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9C50C9A02670E7A300F5B581 /* news-list-test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "news-list-test.json"; sourceTree = "<group>"; };
+		9C50C9A22670E81F00F5B581 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		9C50C9A42670E86200F5B581 /* NewsSearchRemoteDataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSearchRemoteDataSourceMock.swift; sourceTree = "<group>"; };
+		9C50C9A62670E8DA00F5B581 /* NewsSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSearchTests.swift; sourceTree = "<group>"; };
 		9CCEB92F2670964100B5B3C3 /* NewsAppData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NewsAppData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CCEB9322670964100B5B3C3 /* NewsAppData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsAppData.h; sourceTree = "<group>"; };
 		9CCEB9332670964100B5B3C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +82,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C50C99B2670E74700F5B581 /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				9C50C9A02670E7A300F5B581 /* news-list-test.json */,
+			);
+			path = TestData;
+			sourceTree = "<group>";
+		};
+		9C50C99C2670E74D00F5B581 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				9C50C9A42670E86200F5B581 /* NewsSearchRemoteDataSourceMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		9C50C99D2670E76600F5B581 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9C50C9A22670E81F00F5B581 /* Utils.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9C50C99E2670E76B00F5B581 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9C50C99F2670E77900F5B581 /* NewsSearchTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		9C50C99F2670E77900F5B581 /* NewsSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C50C9A62670E8DA00F5B581 /* NewsSearchTests.swift */,
+			);
+			path = NewsSearchTests;
+			sourceTree = "<group>";
+		};
 		9CCEB9252670964100B5B3C3 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +154,10 @@
 		9CCEB93C2670964100B5B3C3 /* NewsAppDataTests */ = {
 			isa = PBXGroup;
 			children = (
+				9C50C99D2670E76600F5B581 /* Helpers */,
+				9C50C99C2670E74D00F5B581 /* Mocks */,
+				9C50C99B2670E74700F5B581 /* TestData */,
+				9C50C99E2670E76B00F5B581 /* Tests */,
 				9CCEB93D2670964100B5B3C3 /* NewsAppDataTests.swift */,
 				9CCEB93F2670964100B5B3C3 /* Info.plist */,
 			);
@@ -230,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C50C9A12670E7A300F5B581 /* news-list-test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +304,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CCEB93E2670964100B5B3C3 /* NewsAppDataTests.swift in Sources */,
+				9C50C9A32670E81F00F5B581 /* Utils.swift in Sources */,
+				9C50C9A72670E8DA00F5B581 /* NewsSearchTests.swift in Sources */,
+				9C50C9A52670E86200F5B581 /* NewsSearchRemoteDataSourceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
