@@ -1,7 +1,8 @@
 # NewsApp
 
-## iOS app for fetching news list from News API with limitted results in search due to free developer API key.
+## iOS app for fetching news list from News API with limited results in search due to free developer API key.
 
+#### There is pagination defaults to 20 item per page but I've limited this to only 5 pages as the free account only return 100 items result.
 ### Approch for development:
 #### I've used modular app archetecture approch splitting project small frameworks doing the main functionality along with the main app layer:
 - Main App layer: which containts the app delegate and scene delgate along with coordinator and dependency injection functionality.
