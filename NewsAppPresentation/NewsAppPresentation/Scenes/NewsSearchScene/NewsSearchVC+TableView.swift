@@ -20,6 +20,8 @@ extension NewsSearchVC: UITableViewDelegate, UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ArticleCell.cellIdentifier, for: indexPath) as! ArticleCell
+        cell.articleSourceButton.tag = indexPath.row
+        cell.articleSourceButton.addTarget(self, action: #selector(didTapSourceButton), for: .touchUpInside)
         cell.configureCell(with: self.newsSearchVM.newsResultEntity.articles?[indexPath.row])
         return cell
     }
@@ -35,5 +37,14 @@ extension NewsSearchVC: UITableViewDelegate, UITableViewDataSource {
             self.newsSearchVM.page += 1
             self.newsSearchVM.getNewsSearchResult(with: searchBar.text ?? "", page: self.newsSearchVM.page)
         }
+    }
+    
+    @objc
+    public func didTapSourceButton(_ sender: UIButton) {
+        let source = self.newsSearchVM.newsResultEntity.articles?[sender.tag]
+        guard let url = URL(string: source?.url ?? "") else {
+          return
+        }
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
 }
