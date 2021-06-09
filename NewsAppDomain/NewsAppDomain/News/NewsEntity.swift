@@ -10,7 +10,7 @@ import Foundation
 public struct NewsEntity: Codable {
     public let status : String?
     public let totalResults : Int?
-    public let articles : [Articles]?
+    public var articles : [Articles]?
     
     public init (status: String?, totalResults: Int?, articles : [Articles]?) {
         self.status = status
